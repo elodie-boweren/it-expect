@@ -1,0 +1,17 @@
+{
+  "name": "c137-todo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "dev:server": "pnpm --filter server dev",
+    "dev:client": "pnpm --filter client dev",
+    "build": "pnpm --filter server build && pnpm --filter client build",
+    "seed": "pnpm --filter server seed",
+    "test": "pnpm --filter server test",
+    "start": "pnpm --filter server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
