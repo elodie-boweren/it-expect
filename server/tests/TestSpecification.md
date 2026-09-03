@@ -13,7 +13,7 @@ The test specification covers:
 - Authentication and session management
 - Task creation
 - Task retrieval and display
-- Task updateù
+- Task update
 - Task completion status
 - Task deletion
 - Clearing completed tasks
@@ -89,7 +89,7 @@ Priority:
 | Create task | TK-10 | Create a task without a due date | User is authenticated | Task is created without a due date | Medium |
 | Create task | TK-11 | Create a task with a title exceeding the maximum length | User is authenticated | Task is rejected by validation | Medium |
 | Create task | TK-12 | Create a task with a description exceeding the maximum length | User is authenticated | Task is rejected by validation | Medium |
-| Create task | TK-13 | Create a task with an empty category | User is authenticated | Task is rejected by validation or falls back to the application's defined default behaviour | Medium |
+| Create task | TK-13 | Create a task with an empty category | User is authenticated | Task falls back to the application's defined default behaviour | Medium |
 
 ## 4.3 Task Retrieval and Display
 
@@ -131,7 +131,7 @@ Priority:
 |---|---|---|---|---|---|
 | Delete task | TK-33 | Delete an existing task | Task exists | Task is removed from the list and database | High |
 | Clear completed | TK-34 | Clear completed tasks | At least one task is completed | All completed tasks are removed | High |
-| Clear completed | TK-358 | Clear completed tasks when none exist | No completed tasks | No task is removed and count is zero | Medium |
+| Clear completed | TK-35 | Clear completed tasks when none exist | No completed tasks | No task is removed and count is zero | Medium |
 | Clear completed | TK-36 | Clear completed tasks when pending tasks also exist | Completed and pending tasks exist | Completed tasks are removed and pending tasks remain | High |
 
 ## 4.7 Priority Management
