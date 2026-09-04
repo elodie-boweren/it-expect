@@ -8,7 +8,9 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "seed": "tsx src/db/seed.ts",
-    "test": "vitest run"
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "vitest run ../tests/server/unit",
+    "test:integration": "vitest run ../tests/server/integration"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",

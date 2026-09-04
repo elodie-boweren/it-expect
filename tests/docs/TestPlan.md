@@ -137,12 +137,11 @@ Me, myself and I
 
 - React 18.3.1
 - Vite 6.4.3
-- Node.js
 
 #### Backend
 
-- Node.js
-- Express
+- Node.js 22 LTS
+- Express 
 
 #### Database
 
@@ -176,6 +175,7 @@ Test data will include:
 | React Testing Library | Testing React components |
 | Playwright / Cypress | End-to-end testing |
 | PostgreSQL | Database testing |
+| Lighthouse | Web navigator tester (accessibility)  |
 | GitHub | Version control and test documentation |
 
 ## 5. TESTING APROACHES 
@@ -282,7 +282,7 @@ The following matrix defines which test level will be used for each test scenari
 | Task completion        | TK-31–TK-32   |   ✓  |      ✓      |  ✓  |       ✓       |
 | Task deletion          | TK-33–TK-36   |      |      ✓      |  ✓  |       ✓       |
 | Priority Management    | PR-01–PR-04   |   ✓  |      ✓      |  ✓  |               |
-| Categories             | CT-01–CT-05   |   ✓  |      ✓      |  ✓  |               |
+| Categories             | CAT-01–CAT-03   |   ✓  |      ✓      |  ✓  |               |
 | Due dates              | DU-01–DU-03   |   ✓  |      ✓      |  ✓  |               |
 | Filtering              | FL-01–FL-09   |   ✓  |      ✓      |  ✓  |               |
 | Search                 | SR-01–SR-07   |   ✓  |      ✓      |  ✓  |               |

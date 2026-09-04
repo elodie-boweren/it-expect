@@ -8,10 +8,20 @@
     "dev:client": "pnpm --filter client dev",
     "build": "pnpm --filter server build && pnpm --filter client build",
     "seed": "pnpm --filter server seed",
+    "test:unit": "pnpm --filter server test:unit",
+    "test:integration": "pnpm --filter server test:integration",
     "test": "pnpm --filter server test",
+    "test:e2e": "playwright test tests/e2e",
     "start": "pnpm --filter server start"
   },
+  "dependencies": {
+    "bcryptjs": "^3.0.2"
+  },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "@types/bcryptjs": "^2.4.6",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1",
+    "concurrently": "^9.1.2",
+    "vitest": "^3.0.7"
   }
 }

@@ -33,11 +33,13 @@ The test specification covers:
 |---|---|
 | AU | Authentication |
 | TK | Task management |
+| PR | Priority Management |
+| CAT | Categories |
+| DU | Due Dates |
 | FL | Filtering |
 | SR | Search |
 | SO | Sorting |
 | ST | Statistics and progress metrics |
-| API | API validation and error handling |
 | ACC | Accessibility |
 
 Priority:
@@ -147,9 +149,9 @@ Priority:
 
 | Functionality | Test ID | Scenario | Preconditions | Expected Result | Priority |
 |---|---|---|---|---|---|
-| Categories | CT-01 | Create a task with a predefined category | User is authenticated | Task is assigned to the selected category | Medium |
-| Categories | CT-02 | Create a task with a custom category | User is authenticated | Custom category is stored and displayed | Medium |
-| Categories | CT-05 | Create a task with a category longer than the maximum length | User is authenticated | Validation error is returned | Medium |
+| Categories | CAT-01 | Create a task with a predefined category | User is authenticated | Task is assigned to the selected category | Medium |
+| Categories | CAT-02 | Create a task with a custom category | User is authenticated | Custom category is stored and displayed | Medium |
+| Categories | CAT-03 | Create a task with a category longer than the maximum length | User is authenticated | Validation error is returned | Medium |
 
 ## 4.9 Due Dates
 
